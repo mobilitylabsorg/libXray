@@ -49,12 +49,12 @@ require (
 	go.yaml.in/yaml/v3 v3.0.5 // indirect
 	go4.org/netipx v0.0.0-20231129151722-fdeea329fbba // indirect
 	golang.org/x/crypto v0.57.0 // indirect
-	golang.org/x/exp v0.0.0-20240506185415-9bf2ced13842 // indirect
+	golang.org/x/exp v0.0.0-20250711185948-6ae5c78190dc // indirect
 	golang.org/x/mod v0.41.0 // indirect
 	golang.org/x/net v0.59.0 // indirect
 	golang.org/x/sync v0.23.0 // indirect
 	golang.org/x/text v0.42.0 // indirect
-	golang.org/x/time v0.14.0 // indirect
+	golang.org/x/time v0.15.0 // indirect
 	golang.org/x/tools v0.50.0 // indirect
 	golang.zx2c4.com/wintun v0.0.0-20230126152724-0fa3db229ce2 // indirect
 	golang.zx2c4.com/wireguard v0.0.0-20250521234502-f333402bd9cb // indirect
@@ -65,3 +65,10 @@ require (
 	gvisor.dev/gvisor v0.0.0-20260122175437-89a5d21be8f0 // indirect
 	lukechampine.com/blake3 v1.4.1 // indirect
 )
+
+// UniRay: Xray-core from mobilitylabsorg/Xray-core (branch uniray): BBRv3 and
+// RACK in the TUN stack, on the gVisor fork below. Replace directives of a
+// dependency do not apply here, so the gVisor fork is named again.
+replace github.com/xtls/xray-core => github.com/mobilitylabsorg/Xray-core v1.260327.1-0.20261015230303-14f61479c8e5
+
+replace gvisor.dev/gvisor => github.com/mobilitylabsorg/gvisor v0.0.0-20261009073017-f8bf70ec5e36
